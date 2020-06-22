@@ -11,8 +11,8 @@ class Personagem{
     this.spriteI = 0;          // Index de coluna 
     this.spriteJ = 0;          // Index de linha
     //Posições dentro do sprite
-    this.posicapSpriteX = 55;
-    this.posicaoSpriteY = 320;
+    this.posicapSpriteX = 0;
+    this.posicaoSpriteY = 0;
     
     // Posicionamento na tela
     this.posicaoX = 0;
