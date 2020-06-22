@@ -16,7 +16,7 @@ class Personagem{
     
     // Posicionamento na tela
     this.posicaoX = 320;
-    this.posicaoY = height - 210;
+    this.posicaoY = height - 310;
   
   
   }
