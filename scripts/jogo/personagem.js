@@ -6,7 +6,7 @@ class Personagem{
     // Caracteristicas do sprite utilizado
     this.imagem = imagem;      // Sprite utilizado
     this.spriteAltura = 270;   // Altura do personagem dentro do sprite
-    this.spriteLargura = 220;  // Largura do personagem dentro do sprite
+    this.spriteLargura = 230;  // Largura do personagem dentro do sprite
     // Variaveis auxiliares para o sprite
     this.spriteI = 0;          // Index de coluna 
     this.spriteJ = 0;          // Index de linha
@@ -15,8 +15,8 @@ class Personagem{
     this.posicaoSpriteY = 0;
     
     // Posicionamento na tela
-    this.posicaoX = 320;
-    this.posicaoY = height - 310;
+    this.posicaoX = 55;
+    this.posicaoY = height - 320;
   
   
   }
