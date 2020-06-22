@@ -23,7 +23,7 @@ class Personagem{
   
   }
   exibe(){
-    image(this.imagem,5,height-135,110,135,this.matriz[this.frameAtual][0],this.matriz[this.frameAtual][1],120,270);
+    image(this.imagem,5,height-135,110,135,this.matriz[this.frameAtual][0],this.matriz[this.frameAtual][1],220,270);
     this.anima();
     
   }
