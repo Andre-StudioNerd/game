@@ -7,7 +7,7 @@ let personagem;
 
 function preload(){
 imagemCenario=loadImage('imagens/cenario/floresta.png');
-imagemPersonagem=loadImage('imagens/personagem/correndo2.png');
+imagemPersonagem=loadImage('imagens/personagem/correndo_mega.png');
 somDoJogo=loadSound('sons/trilha_jogo.mp3');
 }
 
