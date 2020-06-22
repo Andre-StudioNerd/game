@@ -1,6 +1,6 @@
 class Personagem{
   constructor(imagem){
-    this.altura = 135;
+    this.altura = 320;
     this.largura = 110;
     
     // Caracteristicas do sprite utilizado
@@ -15,7 +15,7 @@ class Personagem{
     this.posicaoSpriteY = 0;
     
     // Posicionamento na tela
-    this.posicaoX = 0;
+    this.posicaoX = 55;
     this.posicaoY = height - this.altura;
   
   
