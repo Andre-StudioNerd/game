@@ -15,7 +15,7 @@ class Personagem{
     this.posicaoSpriteY = 0;
     
     // Posicionamento na tela
-    this.posicaoX = 0;
+    this.posicaoX = 320;
     this.posicaoY = height - this.altura;
   
   
