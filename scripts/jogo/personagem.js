@@ -1,7 +1,7 @@
 class Personagem{
   constructor(imagem){
     this.altura = 135;
-    this.largura = 55;
+    this.largura = 100;
     
     // Caracteristicas do sprite utilizado
     this.imagem = imagem;      // Sprite utilizado
