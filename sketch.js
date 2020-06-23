@@ -1,6 +1,7 @@
 let imagemCenario;
 let imagemPersonagem;
 let imagemInimigo;
+let imagemGameOver;
 
 let cenario;
 let somDoJogo;
@@ -64,6 +65,8 @@ function preload(){
 imagemCenario=loadImage('imagens/cenario/fundo_game.png');
 imagemPersonagem=loadImage('imagens/personagem/seiya_vai.png');
 imagemInimigo = loadImage('imagens/inimigos/gotinha.png');
+imagemGameOver = loadImage('imagens/sistema/gameover.jpg');
+
 somDoJogo=loadSound('sons/intro.mp3');
 }
 
@@ -91,9 +94,14 @@ function draw() {
 
   personagem.exibe();
   personagem.simularGravidade();
-    
+
   inimigo.exibe();
   inimigo.move();
+
+  if (personagem.detectarColisao(inimigo)) {
+    noLoop();
+    image(imagemGameOver, 0, 0, width, height);
+  }
   
   
   }
