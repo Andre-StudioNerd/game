@@ -7,7 +7,7 @@ let personagem;
 
 function preload(){
 imagemCenario=loadImage('imagens/cenario/fundo_game.png');
-imagemPersonagem=loadImage('imagens/personagem/seiya.png');
+imagemPersonagem=loadImage('imagens/personagem/seiya_corre.png');
 somDoJogo=loadSound('sons/abel.mp3');
 }
 
