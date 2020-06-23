@@ -19,15 +19,7 @@ class Personagem extends Animacao {
     //}
   }
   
-  simularGravidade() {
-    this.y += this.vPulo;
-    this.vPulo += this.gravidade;
-    
-    if (this.y > this.y0){
-      this.y = this.y0;
-      //this.qntPulos = 2;
-    }
-  }
+  
   
  
   
