@@ -1,10 +1,14 @@
 let imagemCenario;
 let imagemPersonagem;
+let imagemInimigo;
+let imagemGameOver;
+
+let trilhaSonora;
+let somPulo;
+
 let cenario;
-let somDoJogo;
 let personagem;
-
-
+let inimigo;
 
 const matrizInimigo = [
   [0, 0],
@@ -36,46 +40,62 @@ const matrizInimigo = [
   [210, 609],
   [315, 609],
 ]
-
 const matrizPersonagem = [
-  [0, 0],
-  [220, 0],
-  [440, 0],
-  [660, 0],
-  [0, 270],
-  [220, 270],
-  [440, 270],
-  [660, 270],
-  [0, 540],
-  [220, 540],
-  [440, 540],
-  [660, 540],
-  [0, 810],
-  [220, 810],
-  [440, 810],
-  [660, 810],
-]
-
+      [0, 0],
+      [220, 0],
+      [440, 0],
+      [660, 0],
+      [0, 270],
+      [220, 270],
+      [440, 270],
+      [660, 270],
+      [0, 540],
+      [220, 540],
+      [440, 540],
+      [660, 540],
+      [0, 810],
+      [220, 810],
+      [440, 810],
+      [660, 810],
+    ]
 
 function preload(){
 imagemCenario=loadImage('imagens/cenario/fundo_game.png');
 imagemPersonagem=loadImage('imagens/personagem/seiya_vai.png');
+imagemInimigo = loadImage('imagens/inimigos/gotinha.png');
+imagemGameOver = loadImage('imagens/gameover/gameover.jpg');
 somDoJogo=loadSound('sons/intro.mp3');
+somPulo = loadSound('sons/jump.mp3');
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  cenario=new Cenario(imagemCenario,10);
-  personagem=new Personagem(imagemPersonagem);
-  frameRate(5);
-  somDoJogo.loop();
-  
+  cenario = new Cenario(imagemCenario, 5);
+  personagem = new Personagem(imagemPersonagem, matrizPersonagem, 0, height-135, 110, 135, 220, 270, somPulo);
+  inimigo = new Inimigo(imagemInimigo, matrizInimigo, width-52, height-52, 52, 52, 104, 104);
+  trilhaSonora.loop();
+  frameRate(30);
 }
 
-function draw() {
+function keyPressed() {
+  if (key === 'ArrowUp') {
+    personagem.pular();
+  }
+}
+
+function draw() { 
   cenario.exibe();
   cenario.move();
-  personagem.exibe();
   
+  personagem.exibe();
+  personagem.simularGravidade();
+  
+  inimigo.exibe();
+  inimigo.move();
+  
+  if (personagem.detectarColisao(inimigo)) {
+    noLoop();
+    image(imagemGameOver, 0, 0, width, height);
   }
+}
 
