@@ -87,9 +87,14 @@ function keyPressed() {
 function draw() {
   cenario.exibe();
   cenario.move();
+
+
+  personagem.exibe();
+  personagem.simularGravidade();
+    
   inimigo.exibe();
   inimigo.move();
-  personagem.exibe();
+  
   
   }
 
