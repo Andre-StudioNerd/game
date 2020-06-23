@@ -71,7 +71,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   cenario=new Cenario(imagemCenario,10);
   personagem=new Personagem(imagemPersonagem);
-  inimigo = new Inimigo(imagemInimigo, matrizInimigo, width-52, height-52, 52, 52, 104, 104);
+  inimigo = new Inimigo(imagemInimigo, matrizInimigo, width-55, height-240, 52, 52, 104, 104);
   frameRate(5);
   somDoJogo.loop();
   
