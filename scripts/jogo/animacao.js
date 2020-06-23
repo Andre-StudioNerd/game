@@ -13,7 +13,7 @@ class Animacao {
     }
     
     exibe() {
-      image(this.imagem, width - 55, height - 220, 
+      image(this.imagem, width - 55, height - 250, 
             this.largura, this.altura, 
             this.matriz[this.frameAtual][0], this.matriz[this.frameAtual][1], 
             this.lSprite, this.aSprite);
