@@ -63,6 +63,7 @@ const matrizPersonagem = [
 function preload(){
 imagemCenario=loadImage('imagens/cenario/fundo_game.png');
 imagemPersonagem=loadImage('imagens/personagem/seiya_vai.png');
+imagemInimigo = loadImage('imagens/inimigos/gotinha.png');
 somDoJogo=loadSound('sons/intro.mp3');
 }
 
@@ -70,6 +71,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   cenario=new Cenario(imagemCenario,10);
   personagem=new Personagem(imagemPersonagem);
+  inimigo = new Inimigo(imagemInimigo, matrizInimigo, width-52, height-52, 52, 52, 104, 104);
   frameRate(5);
   somDoJogo.loop();
   
@@ -78,6 +80,7 @@ function setup() {
 function draw() {
   cenario.exibe();
   cenario.move();
+  inimigo.exibe();
   personagem.exibe();
   
   }
