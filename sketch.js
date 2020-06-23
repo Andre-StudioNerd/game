@@ -13,7 +13,7 @@ somDoJogo=loadSound('sons/abel.mp3');
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  cenario=new Cenario(imagemCenario,10);
+  cenario=new Cenario(imagemCenario,20);
   personagem=new Personagem(imagemPersonagem);
   frameRate(5);
   somDoJogo.loop();
