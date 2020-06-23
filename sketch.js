@@ -78,6 +78,12 @@ function setup() {
   
 }
 
+function keyPressed() {
+  if (key === 'ArrowUp') {
+    personagem.pular();
+  }
+}
+
 function draw() {
   cenario.exibe();
   cenario.move();
