@@ -31,7 +31,7 @@ class Personagem extends Animacao {
   
   
   detectarColisao(inimigo) {
-    const precisao = 0.1;
+    const precisao = 0.3;
     const colisao = collideRectRect(this.x, this.y, 
                                     this.largura*precisao, this.altura*precisao,
                                     inimigo.x, inimigo.y, 
