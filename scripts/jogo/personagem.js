@@ -1,7 +1,7 @@
 class Personagem extends Animacao {
   constructor(imagem, matriz, x, y, largura, altura, lSprite, aSprite, somPulo) {
     super(imagem, matriz, x, y, largura, altura, lSprite, aSprite);
-    //this.somPulo = somPulo;
+    this.somPulo = somPulo;
     this.y0 = y;
     
     this.vPulo = 0;
@@ -15,7 +15,7 @@ class Personagem extends Animacao {
     if (this.qntPulos > 0) {
       this.vPulo = -50;
       this.qntPulos--;
-      //this.somPulo.play();
+      this.somPulo.play();
     }
   }
   simularGravidade() {

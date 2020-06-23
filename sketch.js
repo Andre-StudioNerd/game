@@ -4,6 +4,7 @@ let imagemInimigo;
 let imagemGameOver;
 
 let cenario;
+let somPulo;
 let somDoJogo;
 let personagem;
 let inimigo;
@@ -68,6 +69,7 @@ imagemInimigo = loadImage('imagens/inimigos/gotinha.png');
 imagemGameOver = loadImage('imagens/sistema/gameover.jpg');
 
 somDoJogo=loadSound('sons/intro.mp3');
+somPulo = loadSound('sons/jump.mp3');
 }
 
 function setup() {
