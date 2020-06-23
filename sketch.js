@@ -70,8 +70,9 @@ somDoJogo=loadSound('sons/intro.mp3');
 function setup() {
   createCanvas(windowWidth, windowHeight);
   cenario=new Cenario(imagemCenario,10);
-  personagem=new Personagem(imagemPersonagem);
   inimigo = new Inimigo(imagemInimigo, matrizInimigo, width-55, height-240, 50, 50, 104, 104);
+  personagem=new Personagem(imagemPersonagem);
+  
   frameRate(5);
   somDoJogo.loop();
   
