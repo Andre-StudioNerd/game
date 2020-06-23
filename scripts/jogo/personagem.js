@@ -6,17 +6,17 @@ class Personagem extends Animacao {
     
     this.vPulo = 0;
     this.gravidade = 20;
-    //this.qntPulos = 2;
+    this.qntPulos = 2;
    
 
   }
   
   pular() {
-    //if (this.qntPulos > 0) {
+    if (this.qntPulos > 0) {
       this.vPulo = -50;
-      //this.qntPulos--;
+      this.qntPulos--;
       //this.somPulo.play();
-    //}
+    }
   }
   simularGravidade() {
     this.y += this.vPulo;
@@ -24,9 +24,12 @@ class Personagem extends Animacao {
     
     if (this.y > this.y0){
       this.y = this.y0;
-      //this.qntPulos = 2;
+      this.qntPulos = 2;
     }
   }
+
+  
+  
   
   
   
