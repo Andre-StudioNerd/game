@@ -6,7 +6,7 @@ class Personagem extends Animacao {
 
   }
   
-  pular() {
+  pula() {
 
     this.y=this.y -50;
     //if (this.qntPulos > 0) {
