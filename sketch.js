@@ -6,7 +6,7 @@ let personagem;
 
 
 function preload(){
-imagemCenario=loadImage('imagens/cenario/fundo_game.png');
+imagemCenario=loadImage('imagens/cenario/grecia.png');
 imagemPersonagem=loadImage('imagens/personagem/shura_corre.png');
 somDoJogo=loadSound('sons/abel.mp3');
 }
