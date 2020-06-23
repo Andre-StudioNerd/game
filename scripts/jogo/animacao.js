@@ -2,7 +2,7 @@ class Animacao {
     constructor(imagem, matriz, x, y, largura, altura, lSprite, aSprite) {
       this.imagem = imagem;
       this.matriz = matriz;
-      this.x = x;
+      this.x = width - 55;
       this.y = y;
       this.largura = largura;
       this.altura = altura;
@@ -13,7 +13,7 @@ class Animacao {
     }
     
     exibe() {
-      image(this.imagem, width - 55, height - 250, 
+      image(this.imagem, this.x, height - 250, 
             this.largura, this.altura, 
             this.matriz[this.frameAtual][0], this.matriz[this.frameAtual][1], 
             this.lSprite, this.aSprite);
