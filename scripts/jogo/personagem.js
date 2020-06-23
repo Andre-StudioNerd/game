@@ -13,7 +13,7 @@ class Personagem extends Animacao {
   
   pular() {
     //if (this.qntPulos > 0) {
-      this.y = this.y-30;
+      this.y = this.y-50;
       //this.qntPulos--;
       //this.somPulo.play();
     //}
