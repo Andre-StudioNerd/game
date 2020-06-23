@@ -1,8 +1,11 @@
 let imagemCenario;
 let imagemPersonagem;
+let imagemInimigo;
+
 let cenario;
 let somDoJogo;
 let personagem;
+let inimigo;
 
 
 
