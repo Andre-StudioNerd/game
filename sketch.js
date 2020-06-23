@@ -81,6 +81,7 @@ function draw() {
   cenario.exibe();
   cenario.move();
   inimigo.exibe();
+  inimigo.move();
   personagem.exibe();
   
   }
