@@ -5,6 +5,7 @@ let imagemGameOver;
 let imagemParalaxe;
 
 let somColisao;
+let somInimigo;
 let cenario;
 let somPulo;
 let somDoJogo;
@@ -108,6 +109,8 @@ imagemGameOver = loadImage('imagens/sistema/over.png');
 somDoJogo=loadSound('sons/intro.mp3');
 somPulo = loadSound('sons/jump.mp3');
 somColisao = loadSound('sons/bite.mp3');
+somInimigo = loadSound('sons/bow.mp3');
+
 }
 
 function setup() {
