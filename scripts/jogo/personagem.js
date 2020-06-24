@@ -30,7 +30,7 @@ class Personagem extends Animacao {
 
   
   
-  detectarColisao(inimigo) {
+  detectarColisaoandre(inimigo) {
     
     
     //const precisao = 0.4;
