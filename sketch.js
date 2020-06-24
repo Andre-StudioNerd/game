@@ -3,7 +3,7 @@ let imagemPersonagem;
 let imagemInimigo;
 let imagemGameOver;
 let imagemParalaxe;
-let imagemNuvem;
+
 
 let somColisao;
 let somInimigo;
@@ -105,7 +105,7 @@ imagemPersonagem=loadImage('imagens/personagem/pegaso.png');
 imagemInimigo = loadImage('imagens/inimigos/gotinha.png');
 imagemParalaxe=loadImage('imagens/cenario/santuario.png');
 
-imagemNuvem=loadImage('imagens/cenario/nuvem.png');
+
 
 imagemGameOver = loadImage('imagens/sistema/over.png');
 
@@ -150,8 +150,7 @@ function draw() {
 
   paralaxe.exibe();
   paralaxe.move();
-  nuvem.exibe();
-  nuvem.move();
+  
 
   if (personagem.detectarColisao(inimigo)) {
     somColisao.play();
