@@ -44,7 +44,7 @@ const matrizInimigo = [
 
 
 
-const matrizPersonagem = [
+const matrizSeiya = [
   [0, 0],
   [137, 0],
   [274, 0],
@@ -78,7 +78,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   cenario=new Cenario(imagemCenario,10);
   inimigo = new Inimigo(imagemInimigo, matrizInimigo, width-55, height-240, 50, 50, 104, 104);
-  personagem=new Personagem(imagemPersonagem,matrizPersonagem,55, height - 320, 110, 135,220, 270);
+  personagem=new Personagem(imagemPersonagem,matrizSeiya,55, height - 320, 110, 135,220, 270);
   
   frameRate(5);
   somDoJogo.loop();
