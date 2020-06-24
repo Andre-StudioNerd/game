@@ -83,7 +83,7 @@ const matrizSeiya = [
 
 function preload(){
 imagemCenario=loadImage('imagens/cenario/fundo_game.png');
-imagemPersonagem=loadImage('imagens/personagem/spriye_seiya.png');
+imagemPersonagem=loadImage('imagens/personagem/gotinha.png');
 imagemInimigo = loadImage('imagens/inimigos/gotinha.png');
 imagemGameOver = loadImage('imagens/sistema/gameover.jpg');
 
@@ -95,7 +95,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   cenario=new Cenario(imagemCenario,10);
   inimigo = new Inimigo(imagemInimigo, matrizInimigo, width-55, height-240, 50, 50, 104, 104);
-  personagem=new Personagem(imagemPersonagem,matrizSeiya,55, height - 320, 137, 73,137, 73);
+  personagem=new Personagem(imagemPersonagem,matrizInimigo,55, height-240, 50, 50, 104, 104);
   
   frameRate(5);
   somDoJogo.loop();
