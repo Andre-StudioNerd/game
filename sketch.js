@@ -108,10 +108,7 @@ function draw() {
     //image(imagemGameOver, 0, 0, width, height);
   //}
 
-  if (personagem.estaColidindo(inimigo)) {
-    console.log('colidiu')
-    noLoop()
-  }
+  
   
   
   }
