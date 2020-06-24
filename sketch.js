@@ -130,8 +130,7 @@ function keyPressed() {
 function draw() {
   cenario.exibe();
   cenario.move();
-  paralaxe.exibe();
-  paralaxe.move();
+  
 
 
   personagem.exibe();
@@ -139,6 +138,9 @@ function draw() {
 
   inimigo.exibe();
   inimigo.move();
+
+  paralaxe.exibe();
+  paralaxe.move();
 
   if (personagem.detectarColisao(inimigo)) {
     noLoop();
