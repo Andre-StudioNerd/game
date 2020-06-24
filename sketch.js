@@ -97,7 +97,7 @@ const matrizPersonagem = [
 
 function preload(){
 imagemCenario=loadImage('imagens/cenario/fundo_game.png');
-imagemPersonagem=loadImage('imagens/personagem/gotinha.png');
+imagemPersonagem=loadImage('imagens/personagem/pegaso.png');
 imagemInimigo = loadImage('imagens/inimigos/gotinha.png');
 imagemGameOver = loadImage('imagens/sistema/gameover.jpg');
 
