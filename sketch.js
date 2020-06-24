@@ -3,6 +3,7 @@ let imagemPersonagem;
 let imagemInimigo;
 let imagemGameOver;
 let imagemParalaxe;
+let imagemNuvem;
 
 let somColisao;
 let somInimigo;
@@ -104,6 +105,8 @@ imagemPersonagem=loadImage('imagens/personagem/pegaso.png');
 imagemInimigo = loadImage('imagens/inimigos/gotinha.png');
 imagemParalaxe=loadImage('imagens/cenario/santuario.png');
 
+imagemNuvem=loadImage('imagens/cenario/nuvem.png');
+
 imagemGameOver = loadImage('imagens/sistema/over.png');
 
 somDoJogo=loadSound('sons/intro.mp3');
@@ -117,6 +120,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   cenario=new Cenario(imagemCenario,10);
   paralaxe=new Paralaxe(imagemParalaxe,12);
+  nuvem=new Nuvens(imagemNuvem,14);
   inimigo = new Inimigo(imagemInimigo, matrizInimigo, width-55, height-240, 50, 50, 96, 96);
   personagem=new Personagem(imagemPersonagem,matrizInimigo,55, height-240, 50, 50, 96, 96);
   
@@ -146,6 +150,8 @@ function draw() {
 
   paralaxe.exibe();
   paralaxe.move();
+  nuvem.exibe();
+  nuvem.move();
 
   if (personagem.detectarColisao(inimigo)) {
     somColisao.play();
