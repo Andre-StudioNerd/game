@@ -42,7 +42,7 @@ const matrizInimigo = [
   [315, 609],
 ]
 
-const matrizPersonagem = [
+const matrizPersonagema = [
   [0, 0],
   [220, 0],
   [440, 0],
@@ -60,6 +60,7 @@ const matrizPersonagem = [
   [440, 810],
   [660, 810],
 ]
+
 
 
 
