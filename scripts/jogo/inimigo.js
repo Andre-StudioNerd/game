@@ -13,6 +13,7 @@ class Inimigo extends Animacao{
 
     }
     somInimigo.play();
+    somInimigo.pause();
 
   }
   

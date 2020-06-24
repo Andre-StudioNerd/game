@@ -150,7 +150,7 @@ function draw() {
   if (personagem.detectarColisao(inimigo)) {
     somColisao.play();
     somDoJogo.pause();
-    somDoJogo.currentTime = 0;
+    
     noLoop();
     image(imagemGameOver, 0, 0, width, height);
   }
