@@ -43,7 +43,7 @@ class Personagem extends Animacao {
   //}
 
   estaColidindo(inimigo) {
-    const precisao = .35;
+    const precisao = .7;
     const colisao = collideRectRect(
       this.x, 
       this.y, 
