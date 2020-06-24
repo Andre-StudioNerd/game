@@ -108,8 +108,8 @@ somPulo = loadSound('sons/jump.mp3');
 function setup() {
   createCanvas(windowWidth, windowHeight);
   cenario=new Cenario(imagemCenario,10);
-  inimigo = new Inimigo(imagemInimigo, matrizInimigo, width-55, height-240, 50, 50, 104, 104);
-  personagem=new Personagem(imagemPersonagem,matrizInimigo,55, height-240, 50, 50, 104, 104);
+  inimigo = new Inimigo(imagemInimigo, matrizInimigo, width-55, height-240, 50, 50, 96, 96);
+  personagem=new Personagem(imagemPersonagem,matrizInimigo,55, height-240, 50, 50, 96, 96);
   
   frameRate(5);
   somDoJogo.loop();
