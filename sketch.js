@@ -9,6 +9,37 @@ let somDoJogo;
 let personagem;
 let inimigo;
 
+const matrizPegasus = [
+  [0, 0],
+  [105, 0],
+  [210, 0],
+  [315, 0],
+  [0, 104],
+  [105, 104],
+  [210, 104],
+  [315, 104],
+  [0, 208],
+  [105, 208],
+  [210, 208],
+  [315, 208],
+  [0, 312],
+  [105, 312],
+  [210, 312],
+  [315, 312],
+  [0, 409],
+  [105, 409],
+  [210, 409],
+  [315, 409],
+  [0, 503],
+  [105, 503],
+  [210, 503],
+  [315, 503],
+  [0, 609],
+  [105, 609],
+  [210, 609],
+  [315, 609],
+]
+
 
 
 const matrizInimigo = [
@@ -66,7 +97,7 @@ const matrizPersonagem = [
 
 function preload(){
 imagemCenario=loadImage('imagens/cenario/fundo_game.png');
-imagemPersonagem=loadImage('imagens/personagem/seiya_vai.png');
+imagemPersonagem=loadImage('imagens/personagem/pegasus.png');
 imagemInimigo = loadImage('imagens/inimigos/gotinha.png');
 imagemGameOver = loadImage('imagens/sistema/gameover.jpg');
 
@@ -78,7 +109,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   cenario=new Cenario(imagemCenario,10);
   inimigo = new Inimigo(imagemInimigo, matrizInimigo, width-55, height-240, 50, 50, 104, 104);
-  personagem=new Personagem(imagemPersonagem,matrizPersonagem,55, height - 320, 110, 135,220, 270);
+  personagem=new Personagem(imagemPersonagem,matrizPegasus,55, height-240, 50, 50, 104, 104);
   
   frameRate(5);
   somDoJogo.loop();
