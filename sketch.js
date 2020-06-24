@@ -4,6 +4,7 @@ let imagemInimigo;
 let imagemGameOver;
 let imagemParalaxe;
 
+let somColisao;
 let cenario;
 let somPulo;
 let somDoJogo;
@@ -106,6 +107,7 @@ imagemGameOver = loadImage('imagens/sistema/over.png');
 
 somDoJogo=loadSound('sons/intro.mp3');
 somPulo = loadSound('sons/jump.mp3');
+somColisao = loadSound('sons/bite.mp3');
 }
 
 function setup() {
@@ -143,6 +145,7 @@ function draw() {
   paralaxe.move();
 
   if (personagem.detectarColisao(inimigo)) {
+    somColisao.play();
     noLoop();
     image(imagemGameOver, 0, 0, width, height);
   }
