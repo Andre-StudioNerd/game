@@ -102,7 +102,7 @@ imagemPersonagem=loadImage('imagens/personagem/pegaso.png');
 imagemInimigo = loadImage('imagens/inimigos/gotinha.png');
 imagemParalaxe=loadImage('imagens/cenario/santuario.png');
 
-imagemGameOver = loadImage('imagens/sistema/gameover.jpg');
+imagemGameOver = loadImage('imagens/sistema/over.png');
 
 somDoJogo=loadSound('sons/intro.mp3');
 somPulo = loadSound('sons/jump.mp3');
