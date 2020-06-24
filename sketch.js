@@ -129,6 +129,8 @@ function keyPressed() {
 function draw() {
   cenario.exibe();
   cenario.move();
+  paralaxe.exibe();
+  paralaxe.move();
 
 
   personagem.exibe();
