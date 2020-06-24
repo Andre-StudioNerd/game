@@ -95,7 +95,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   cenario=new Cenario(imagemCenario,10);
   inimigo = new Inimigo(imagemInimigo, matrizInimigo, width-55, height-240, 50, 50, 104, 104);
-  personagem=new Personagem(imagemPersonagem,matrizSeiya,55, height-240, 135, 73, 73, 135);
+  personagem=new Personagem(imagemPersonagem,matrizSeiya,55, height-240, 50, 50, 73, 135);
   
   frameRate(5);
   somDoJogo.loop();
