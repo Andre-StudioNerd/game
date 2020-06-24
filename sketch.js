@@ -101,10 +101,10 @@ function draw() {
   inimigo.exibe();
   inimigo.move();
 
-  if (personagem.detectarColisao(inimigo)) {
-    noLoop();
-    image(imagemGameOver, 0, 0, width, height);
-  }
+  //if (personagem.detectarColisao(inimigo)) {
+    //noLoop();
+    //image(imagemGameOver, 0, 0, width, height);
+  //}
 
   if (personagem.estaColidindo(inimigo)) {
     console.log('colidiu')
