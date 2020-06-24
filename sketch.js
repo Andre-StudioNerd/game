@@ -86,6 +86,7 @@ function setup() {
 function keyPressed() {
   if (key === 'ArrowUp') {
     personagem.pular();
+    somPulo.play();
   }
 }
 
