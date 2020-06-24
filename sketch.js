@@ -109,7 +109,7 @@ imagemGameOver = loadImage('imagens/sistema/over.png');
 somDoJogo=loadSound('sons/intro.mp3');
 somPulo = loadSound('sons/jump.mp3');
 somColisao = loadSound('sons/bite.mp3');
-somInimigo = loadSound('sons/bow.mp3');
+somInimigo = loadSound('sons/pulo_ini.mp3');
 
 }
 
