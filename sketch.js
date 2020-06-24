@@ -83,7 +83,7 @@ const matrizSeiya = [
 
 function preload(){
 imagemCenario=loadImage('imagens/cenario/fundo_game.png');
-imagemPersonagem=loadImage('imagens/personagem/sprite_seiya.png');
+imagemPersonagem=loadImage('imagens/personagem/seiya_vai.png');
 imagemInimigo = loadImage('imagens/inimigos/gotinha.png');
 imagemGameOver = loadImage('imagens/sistema/gameover.jpg');
 
