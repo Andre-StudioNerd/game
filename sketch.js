@@ -103,7 +103,7 @@ function preload(){
 imagemCenario=loadImage('imagens/cenario/fundo_game.png');
 imagemPersonagem=loadImage('imagens/personagem/pegaso.png');
 imagemInimigo = loadImage('imagens/inimigos/gotinha.png');
-imagemParalaxe=loadImage('imagens/cenario/santuario.png');
+imagemParalaxe=loadImage('imagens/cenario/santuario_dia.png');
 
 
 
