@@ -40,7 +40,7 @@ class Personagem extends Animacao {
                                     inimigo.x, inimigo.y, 
                                     inimigo.largura, inimigo.altura); 
     
-    return false;
+    return true;
   }
   
   
