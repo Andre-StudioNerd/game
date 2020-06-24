@@ -63,21 +63,21 @@ const matrizPersonagem= [
 
 const matrizSeiya = [
   [0, 0],
-  [73, 0],
-  [146, 0],
-  [219, 0],
-  [73, 0],
-  [73, 137],
-  [73, 274],
-  [73, 411],
-  [0, 146],
-  [137, 146],
-  [274, 146],
-  [411, 146],
-  [0, 219],
-  [137, 219],
-  [274, 219],
-  [411, 219],
+  [220, 0],
+  [440, 0],
+  [660, 0],
+  [0, 270],
+  [220, 270],
+  [440, 270],
+  [660, 270],
+  [0, 540],
+  [220, 540],
+  [440, 540],
+  [660, 540],
+  [0, 810],
+  [220, 810],
+  [440, 810],
+  [660, 810],
 ]
 
 
@@ -95,7 +95,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   cenario=new Cenario(imagemCenario,10);
   inimigo = new Inimigo(imagemInimigo, matrizInimigo, width-55, height-240, 50, 50, 104, 104);
-  personagem=new Personagem(imagemPersonagem,matrizSeiya,55, height-240, 27, 50, 27, 50);
+  personagem=new Personagem(imagemPersonagem,matrizSeiya,55, height-240, 73, 137, 73, 137);
   
   frameRate(5);
   somDoJogo.loop();
