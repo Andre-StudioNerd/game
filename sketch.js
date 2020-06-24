@@ -66,7 +66,7 @@ const matrizPersonagem = [
 
 function preload(){
 imagemCenario=loadImage('imagens/cenario/fundo_game.png');
-imagemPersonagem=loadImage('imagens/personagem/cdz.png');
+imagemPersonagem=loadImage('imagens/personagem/vai_seiya.png');
 imagemInimigo = loadImage('imagens/inimigos/gotinha.png');
 imagemGameOver = loadImage('imagens/sistema/gameover.jpg');
 
