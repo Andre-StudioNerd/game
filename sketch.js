@@ -3,8 +3,13 @@ let imagemPersonagem;
 let imagemInimigo;
 let imagemGameOver;
 let imagemParalaxe;
+let imagemTelaInicial;
+let fonteTelaInicial;
 
-
+let cenaAtual = 'telaInicial';
+let cenas;
+let telaInicial;
+let botaoGerenciador;
 
 
 
@@ -119,6 +124,8 @@ function preload(){
 imagemCenario=loadImage('imagens/cenario/fundo_game.png');
 imagemPersonagem=loadImage('imagens/personagem/seiya_pegasus.png');
 imagemInimigo = loadImage('imagens/inimigos/docrates.png');
+
+imagemTelaInicial =loadImage('imagens/sistema/over.png');
 
 imagemParalaxe=loadImage('imagens/cenario/santuario.png');
 
