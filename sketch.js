@@ -159,6 +159,9 @@ function keyPressed() {
 function draw() {
   cenario.exibe();
   cenario.move();
+
+  pontuacao.exibe()
+  pontuacao.adicionarPonto()
   
 
 
