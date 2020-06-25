@@ -3,7 +3,7 @@ let imagemPersonagem;
 let imagemInimigo;
 let imagemGameOver;
 let imagemParalaxe;
-let imagemInimigoGrande;
+
 
 
 
@@ -14,7 +14,7 @@ let somPulo;
 let somDoJogo;
 let personagem;
 let inimigo;
-let inimigoGrande;
+
 
 
 
@@ -105,36 +105,7 @@ const matrizPersonagem = [
   [660, 810],
 ]
 
-const matrizInimigoGrande = [
-  [0,0],
-  [400,0],
-  [800,0],
-  [1200,0],
-  [1600,0],
-  [0,400],
-  [400,400],
-  [800,400],
-  [1200, 400],
-  [1600, 400],
-  [0,800],
-  [400, 800],
-  [800, 800],
-  [1200, 800],
-  [1600, 800],
-  [0, 1200],
-  [400, 1200],
-  [800, 1200],
-  [1200, 1200],
-  [1600, 1200], 
-  [0, 1600],
-  [400, 1600],
-  [800, 1600],
-  [1200, 1600],
-  [1600, 1600],
-  [0, 2000],
-  [400, 2000],
-  [800, 2000],
-]
+
 
 
 const inimigos = []
@@ -146,7 +117,7 @@ function preload(){
 imagemCenario=loadImage('imagens/cenario/fundo_game.png');
 imagemPersonagem=loadImage('imagens/personagem/seiya_pegasus.png');
 imagemInimigo = loadImage('imagens/inimigos/docrates.png');
-imagemInimigoGrande = loadImage('imagens/inimigos/troll.png');
+
 imagemParalaxe=loadImage('imagens/cenario/santuario.png');
 
 
@@ -194,7 +165,7 @@ function draw() {
  
 
   
-  inimigos.forEach(inimigo => {
+  
     inimigo.exibe();
     inimigo.move();
 
@@ -204,7 +175,7 @@ function draw() {
     
     noLoop();
     image(imagemGameOver, 0, 0, width, height);
-  }});
+  }
 
 
   paralaxe.exibe();
