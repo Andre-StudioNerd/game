@@ -104,6 +104,9 @@ const matrizPersonagem = [
 ]
 
 
+const inimigos = []
+
+
 
 
 function preload(){
@@ -152,11 +155,12 @@ function draw() {
   personagem.exibe();
   personagem.simularGravidade();
 
-  inimigo.exibe();
-  inimigo.move();
+ 
 
   
- 
+  inimigos.forEach(inimigo => {
+    inimigo.exibe();
+    inimigo.move();
 
   if (personagem.detectarColisao(inimigo)) {
     somColisao.play();
@@ -164,7 +168,7 @@ function draw() {
     
     noLoop();
     image(imagemGameOver, 0, 0, width, height);
-  }
+  }});
 
 
   paralaxe.exibe();
