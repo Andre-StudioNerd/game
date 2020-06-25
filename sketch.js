@@ -160,8 +160,8 @@ function draw() {
   cenario.exibe();
   cenario.move();
 
-  pontuacao.exibe()
-  pontuacao.adicionarPonto()
+  pontuacao.exibe();
+  pontuacao.adicionarPonto();
   
 
 
