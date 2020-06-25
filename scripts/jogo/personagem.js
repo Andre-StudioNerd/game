@@ -6,7 +6,7 @@ class Personagem extends Animacao {
     
     this.vPulo = 0;
     this.gravidade = 20;
-    this.qntPulos = 15;
+    this.qntPulos = 10;
    
 
   }
@@ -24,7 +24,7 @@ class Personagem extends Animacao {
     
     if (this.y > this.y0){
       this.y = this.y0;
-      this.qntPulos = 15;
+      this.qntPulos = 10;
     }
   }
 
