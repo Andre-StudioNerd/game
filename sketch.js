@@ -186,6 +186,8 @@ function draw() {
 
   personagem.exibe();
   personagem.simularGravidade();
+  paralaxe.exibe();
+  paralaxe.move();
 
   
 
@@ -206,8 +208,7 @@ function draw() {
   }
 })
 
-paralaxe.exibe();
-  paralaxe.move();
+
 
   
   
