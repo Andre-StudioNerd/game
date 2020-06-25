@@ -155,8 +155,7 @@ function draw() {
   inimigo.exibe();
   inimigo.move();
 
-  paralaxe.exibe();
-  paralaxe.move();
+  
  
 
   if (personagem.detectarColisao(inimigo)) {
@@ -166,6 +165,10 @@ function draw() {
     noLoop();
     image(imagemGameOver, 0, 0, width, height);
   }
+
+
+  paralaxe.exibe();
+  paralaxe.move();
 
   
   
