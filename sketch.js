@@ -165,12 +165,10 @@ function setup() {
   cenario=new Cenario(imagemCenario,10);
   paralaxe=new Paralaxe(imagemParalaxe,12);
   
-  const inimigo = new Inimigo(imagemInimigo, matrizInimigo, width-55, height-240, 50, 50, 96, 96,10, 200);
+  inimigo = new Inimigo(imagemInimigo, matrizInimigo, width-55, height-240, 50, 50, 96, 96,10, 200);
   personagem=new Personagem(imagemPersonagem,matrizInimigo,55, height-240, 50, 50, 96, 96);
-  const inimigoGrande = new Inimigo(matrizInimigoGrande, imagemInimigoGrande, width , 0, 200, 200, 400, 400, 10, 2500);
-
-  inimigos.push(inimigo);
-  inimigos.push(inimigoGrande);
+  inimigoGrande = new Inimigo(matrizInimigoGrande, imagemInimigoGrande, width , 0, 200, 200, 400, 400, 10, 2500);
+  
   
   frameRate(5);
   somDoJogo.loop();
