@@ -16,36 +16,7 @@ let inimigo;
 
 
 
-const matrizInimigoGrande = [
-  [0,0],
-  [400,0],
-  [800,0],
-  [1200,0],
-  [1600,0],
-  [0,400],
-  [400,400],
-  [800,400],
-  [1200, 400],
-  [1600, 400],
-  [0,800],
-  [400, 800],
-  [800, 800],
-  [1200, 800],
-  [1600, 800],
-  [0, 1200],
-  [400, 1200],
-  [800, 1200],
-  [1200, 1200],
-  [1600, 1200], 
-  [0, 1600],
-  [400, 1600],
-  [800, 1600],
-  [1200, 1600],
-  [1600, 1600],
-  [0, 2000],
-  [400, 2000],
-  [800, 2000],
-]
+
 
 
 
@@ -132,7 +103,6 @@ const matrizPersonagem = [
   [660, 810],
 ]
 
-const inimigos = []
 
 
 
@@ -140,7 +110,6 @@ function preload(){
 imagemCenario=loadImage('imagens/cenario/fundo_game.png');
 imagemPersonagem=loadImage('imagens/personagem/seiya_pegasus.png');
 imagemInimigo = loadImage('imagens/inimigos/docrates.png');
-imagemInimigoGrande = loadImage('imagens/inimigos/troll.png');
 imagemParalaxe=loadImage('imagens/cenario/santuario.png');
 
 
@@ -159,12 +128,8 @@ function setup() {
   cenario=new Cenario(imagemCenario,10);
   paralaxe=new Paralaxe(imagemParalaxe,12);
   
-  
+  inimigo = new Inimigo(imagemInimigo, matrizInimigo, width-55, height-240, 50, 50, 96, 96);
   personagem=new Personagem(imagemPersonagem,matrizInimigo,55, height-240, 50, 50, 96, 96);
-  const inimigo = new Inimigo(imagemInimigo, matrizInimigo, width-55, height-240, 50, 50, 96, 96);
-  const inimigoGrande = new Inimigo(matrizInimigoGrande, imagemInimigoGrande, width , 0, 200, 200, 400, 400, 10, 2500);
-  inimigos.push(inimigo);
-  inimigos.push(inimigoGrande);
   
   frameRate(5);
   somDoJogo.loop();
@@ -186,17 +151,12 @@ function draw() {
 
   personagem.exibe();
   personagem.simularGravidade();
-  paralaxe.exibe();
-  paralaxe.move();
-
-  
-
-  inimigos.forEach(inimigo => {
 
   inimigo.exibe();
   inimigo.move();
 
-  
+  paralaxe.exibe();
+  paralaxe.move();
  
 
   if (personagem.detectarColisao(inimigo)) {
@@ -206,9 +166,6 @@ function draw() {
     noLoop();
     image(imagemGameOver, 0, 0, width, height);
   }
-})
-
-
 
   
   
