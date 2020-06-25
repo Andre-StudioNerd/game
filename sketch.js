@@ -102,7 +102,7 @@ const matrizPersonagem = [
 function preload(){
 imagemCenario=loadImage('imagens/cenario/fundo_game.png');
 imagemPersonagem=loadImage('imagens/personagem/pegaso.png');
-imagemInimigo = loadImage('imagens/inimigos/docrates.png');
+imagemInimigo = loadImage('imagens/inimigos/docrates_negro.png');
 imagemParalaxe=loadImage('imagens/cenario/santuario.png');
 
 
