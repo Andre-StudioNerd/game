@@ -7,6 +7,7 @@ let imagemParalaxe;
 
 
 
+
 let somColisao;
 let somInimigo;
 let cenario;
@@ -14,6 +15,7 @@ let somPulo;
 let somDoJogo;
 let personagem;
 let inimigo;
+let pontuacao;
 
 
 
@@ -135,6 +137,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   cenario=new Cenario(imagemCenario,10);
   paralaxe=new Paralaxe(imagemParalaxe,12);
+  pontuacao = new Pontuacao();
   
   inimigo = new Inimigo(imagemInimigo, matrizInimigo, width-55, height-240, 50, 50, 96, 96);
   personagem=new Personagem(imagemPersonagem,matrizInimigo,55, height-240, 50, 50, 96, 96);
