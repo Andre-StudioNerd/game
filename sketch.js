@@ -4,7 +4,7 @@ let imagemInimigo;
 let imagemGameOver;
 let imagemParalaxe;
 let imagemInimigoGrande;
-let imagemInimigoGrande;
+
 
 
 let somColisao;
