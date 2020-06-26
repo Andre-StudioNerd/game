@@ -1,59 +1,39 @@
 class Personagem extends Animacao {
-  constructor(imagem, matriz, x, y, largura, altura, lSprite, aSprite, somPulo) {
-    super(imagem, matriz, x, y, largura, altura, lSprite, aSprite);
-    //this.somPulo = somPulo;
-    this.y0 = y;
-    
-    this.vPulo = 0;
-    this.gravidade = 20;
-    this.qntPulos = 10;
-   
+  constructor(matriz, imagem, x, variacaoY, largura, altura, larguraSprite, alturaSprite) {
+    super(matriz, imagem, x, variacaoY, largura, altura, larguraSprite, alturaSprite);
 
-  }
-  
-  pular() {
-    if (this.qntPulos > 0) {
-      this.vPulo = -50;
-      this.qntPulos--;
-      //this.somPulo.play();
-    }
-  }
-  simularGravidade() {
-    this.y += this.vPulo;
-    this.vPulo += this.gravidade;
-    
-    if (this.y > this.y0){
-      this.y = this.y0;
-      this.qntPulos = 10;
-    }
+    this.variacaoY = variacaoY
+    this.yInicial = height - this.altura - this.variacaoY;
+    this.y = this.yInicial;
+
+    this.velocidadeDoPulo = 0;
+    this.gravidade = 6;
+    this.alturaDoPulo = -50
+    this.pulos = 0
   }
 
-  
-  
-  detectarColisao(inimigo) {
-    
-    
-    const precisao = 0.7;
-    const colisao = collideRectRect(
-      this.x, 
-      this.y, 
-      this.largura * precisao, 
-      this.altura * precisao,
-      inimigo.x,
-      inimigo.y,
-      inimigo.largura * precisao,
-      inimigo.altura * precisao
-    );
-    
+  pula() {
+    if (this.pulos < 2)
+      this.velocidadeDoPulo = this.alturaDoPulo
+    this.pulos++
+  }
+
+  aplicaGravidade() {
+    this.y = this.y + this.velocidadeDoPulo
+    this.velocidadeDoPulo = this.velocidadeDoPulo + this.gravidade
+
+    if (this.y > this.yInicial) {
+      this.y = this.yInicial
+      this.pulos = 0
+    }
+  }
+
+  estaColidindo(inimigo) {
+
+    const precisao = .7
+
+    const colisao = collideRectRect(this.x, this.y, this.largura * precisao, this.altura * precisao, inimigo.x, inimigo.y, inimigo.largura * precisao, inimigo.altura * precisao);
+
     return colisao;
   }
-
-
-  
-  
- 
-  
 }
-
-
-
